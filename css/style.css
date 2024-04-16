@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('TTLakes-Regular.eot');
+    src: url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    } 
+
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('TTLakes-Bold.eot');
+    src: url('../fonts/TTLakes-Bold.eot') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('TTLakes-Medium.eot');
+    src: url('../fonts/TTLakes-Medium.eot') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: TT Lakes Regular;
+    letter-spacing: 0.2px;
+}
+
+.sidebar {
+    font-family: TT Lakes Medium;
+    max-width: 320px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 14px 0px 60px 0px gainsboro;
+    
+}
+.sidebar-header__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 24px;
+    justify-content: space-between;
+}
+.sidebar-header__navigation {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.sidebar-main__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 18px;
+    padding: 0;
+}
+.sidebar-main__item {
+    padding: 0 24px;
+    position: relative;
+}
+.sidebar-main__item:hover::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 40px;
+    background-color:#41F6D7;
+    border-radius: 20px;
+    top: 0px;
+    left: -2px;
+}
+.sidebar-main__link {
+    text-decoration: none;
+    color: #1B1C21;
+    display: block;
+    padding: 7px 10px;
+}
+
+.sidebar__btn {
+    border: none;
+    background-color: #fff;
+ 
+  } 
+.close{
+    width: 40px;
+    height: 40px; 
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='40' rx='20' fill='%23FF3E79'/%3E%3Cpath d='M13.7935 12.2571C13.403 11.8666 12.7698 11.8666 12.3793 12.2571L12.2571 12.3793C11.8666 12.7698 11.8666 13.403 12.2571 13.7935L18.4636 20L12.2571 26.2065C11.8666 26.597 11.8666 27.2302 12.2571 27.6207L12.3793 27.7429C12.7698 28.1334 13.403 28.1334 13.7935 27.7429L20 21.5364L26.2065 27.7429C26.597 28.1334 27.2302 28.1334 27.6207 27.7429L27.7429 27.6207C28.1334 27.2302 28.1334 26.597 27.7429 26.2065L21.5364 20L27.7429 13.7935C28.1334 13.403 28.1334 12.7698 27.7429 12.3793L27.6207 12.2571C27.2302 11.8666 26.597 11.8666 26.2065 12.2571L20 18.4636L13.7935 12.2571Z' fill='%23FFFFFF'/%3E%3C/svg%3E"); 
+}
+.search{
+    width: 40px;
+    height: 40px; 
+    background-image: url(../img/search.svg);
+}
+
+.call{
+    width: 40px;
+    height: 40px; 
+    background-image: url(../img/call.svg);
+}
+
+.chat{
+    width: 40px;
+    height: 40px; 
+    background-image: url(../img/chat.svg);
+
+}
+.profile{
+    width: 40px;
+    height: 40px; 
+    background-image: url(../img/profile.svg);
+
+}
+
+
+.footer {
+    padding-left: 24px;
+    
+}
+.sidebar-footer__list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+.sidebar-footer__link {
+    text-decoration: none;
+    color: #1B1C21;
+    display: block;
+}
+.email {
+    margin-bottom: 20px;
+}
+.tel {
+    font-family: TT Lakes Bold;
+    font-size: 24px;
+}
+.lang {
+    list-style-type: none;
+    display: flex;
+    gap: 7px;
+    padding: 0;
+}
+.sidebar-main__link:hover,
+.lang__button:hover,
+.sidebar-footer__link:hover {
+    color: #7E7E82;
+}
+.sidebar-header__item:hover,
+.sidebar-footer__item:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.lang__button {
+    color: #1B1C21;
+    background-color: transparent;
+    border: none;
+}
+.ru {
+    color: #7E7E82;
+}
