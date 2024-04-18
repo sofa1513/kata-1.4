@@ -126,7 +126,7 @@ html {
 
 }
 
-.sidebar-footer {
+.sidebar-footer__container {
     padding-left: 24px;
     
 }
@@ -152,7 +152,11 @@ html {
     display: flex;
     gap: 7px;
     padding: 0;
-    margin-top: 40px;
+    
+}
+
+.lang__list-item{
+margin-top: 40px;
 }
 .sidebar-main__link:hover,
 .lang__button:hover,
