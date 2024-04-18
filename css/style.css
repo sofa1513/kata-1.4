@@ -58,17 +58,16 @@ html {
     padding: 24px;
     justify-content: space-between;
 }
-.sidebar-header__navigation {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
+
 .sidebar-main__list {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     gap: 18px;
     padding: 0;
+}
+.sidebar-header__item:nth-child(2){
+    flex-grow: 2;
 }
 .sidebar-main__item {
     padding: 0 24px;
@@ -127,7 +126,7 @@ html {
 
 }
 
-.footer {
+.sidebar-footer {
     padding-left: 24px;
     
 }
@@ -140,20 +139,20 @@ html {
 .sidebar-footer__link {
     text-decoration: none;
     color: #1B1C21;
-    display: block;
+    display: block; 
+    margin-bottom: 12px;
 }
-.email {
-    margin-bottom: 20px;
-}
+
 .tel {
     font-family: TT Lakes Bold;
     font-size: 24px;
 }
-.lang {
+.lang__list {
     list-style-type: none;
     display: flex;
     gap: 7px;
     padding: 0;
+    margin-top: 40px;
 }
 .sidebar-main__link:hover,
 .lang__button:hover,
